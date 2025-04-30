@@ -1,15 +1,202 @@
-<form action="https://formspree.io/f/manoqlkj" method="POST">
-  <label for="name">Name:</label>
-  <input type="text" id="name" name="name" required>
 
-  <label for="email">Email:</label>
-  <input type="email" id="email" name="_replyto" required>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GoKaiMizu | Digital Transformation Consulting</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --luxury-gold: #d4af37;
+      --dark-charcoal: #1c1c1c;
+      --light-ivory: #fdfaf6;
+      --rich-black: #0e0e0e;
+      --soft-gray: #e6e4e1;
+    }
 
-  <label for="subject">Subject:</label>
-  <input type="text" id="subject" name="subject" required>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: var(--light-ivory);
+      color: var(--rich-black);
+      line-height: 1.6;
+    }
 
-  <label for="message">Message:</label>
-  <textarea id="message" name="message" required></textarea>
+    header {
+      background: linear-gradient(to right, var(--dark-charcoal), var(--rich-black));
+      color: var(--luxury-gold);
+      padding: 4rem 2rem;
+      text-align: center;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+    }
 
-  <button type="submit">Send</button>
-</form>
+    header h1 {
+      margin: 0;
+      font-size: 3.5rem;
+      font-family: 'Playfair Display', serif;
+      letter-spacing: 1.5px;
+    }
+
+    header p {
+      margin-top: 1rem;
+      font-size: 1.3rem;
+      color: #ccc;
+      font-style: italic;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      color: var(--dark-charcoal);
+      margin-bottom: 2rem;
+    }
+
+    .philosophy {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .block {
+      background: white;
+      border-radius: 14px;
+      padding: 2rem;
+      border: 1px solid var(--soft-gray);
+      box-shadow: 0 12px 28px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .block:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    }
+
+    .block h2 {
+      margin-top: 0;
+      color: var(--luxury-gold);
+      font-size: 1.8rem;
+    }
+
+    .block p {
+      margin-bottom: 0;
+      color: #555;
+    }
+
+    footer {
+      background: var(--dark-charcoal);
+      color: var(--soft-gray);
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.95rem;
+    }
+
+    footer a {
+      color: var(--luxury-gold);
+      text-decoration: underline;
+    }
+
+    a {
+      color: var(--luxury-gold);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (min-width: 768px) {
+      .philosophy {
+        flex-direction: row;
+      }
+
+      .block {
+        flex: 1;
+      }
+    }
+    .navbar {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar li {
+  flex: 1;
+}
+
+.navbar a {
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>GoKaiMizu</h1>
+    <p>Innovation | Transformation | Flow</p>
+  </header>
+<nav class="navbar">
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+  <section>
+    <h2>Our Philosophy</h2>
+    <div class="philosophy">
+      <div class="block">
+        <h2>GO</h2>
+        <p>Represents progress, innovation, and the drive to move forward in the ever-evolving digital landscape.</p>
+      </div>
+      <div class="block">
+        <h2>KAI</h2>
+        <p>Derived from Japanese, meaning "change" or "improvement," symbolizing transformation and growth, key aspects of IT consulting and digital transformation.</p>
+      </div>
+      <div class="block">
+        <h2>MIZU</h2>
+        <p>Meaning "water" in Japanese, embodies adaptability, resilience, and seamless flow—qualities that define our problem-solving approach in IT solutions and services.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>What We Do</h2>
+    <p>
+      At GoKaiMizu, we specialize in providing cutting-edge IT consulting services. From cloud migration to application modernization, we help businesses navigate their digital transformation journey with agility and precision.
+    </p>
+  </section>
+
+  <section>
+    <h2>Contact Us</h2>
+    <p>Email us at <a href="mailto:info@gokaimizu.com">info@gokaimizu.com</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 GoKaiMizu Consulting. All rights reserved.</p>
+  </footer>
+</body>
+</html>
